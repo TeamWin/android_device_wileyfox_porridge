@@ -43,3 +43,9 @@ TARGET_TAP_TO_WAKE_NODE := /sys/devices/soc/soc:touch/enable_gesture
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
+
+#TWRP
+RECOVERY_VARIANT := twrp
+TW_THEME := portrait_mdpi
+TW_INCLUDE_CRYPTO := true
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/twrp.fstab
